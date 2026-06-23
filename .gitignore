@@ -33,6 +33,9 @@ desktop.ini
 # Generated figures — tracked in figures/ inside the repo (pushed to GitHub)
 # figures/*.pdf  # <-- supprimé : figures suivies par git
 
+# Provenance interne — ne pas publier
+data/PROVENANCE.md
+
 # Temporary
 *.tmp
 *.bak
