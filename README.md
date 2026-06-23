@@ -9,8 +9,6 @@
 [![scikit-fem 12.0.1](https://img.shields.io/badge/scikit--fem-12.0.1-orange.svg)](https://github.com/kinnala/scikit-fem)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 
-Every numerical claim in the paper is traceable to a single command logged in [`data/PROVENANCE.md`](data/PROVENANCE.md). No result is hardcoded.
-
 ---
 
 ## Table of contents
