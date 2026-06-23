@@ -54,6 +54,7 @@ def main():
         (os.path.join("src", "solvers",      "transient_energy_2d.py"),   "GATE_VNV[time] : energy drift < 1e-14"),
         (os.path.join("src", "solvers",      "broken_nitsche_2d.py"),     "GATE_VNV[MMS] : broken-Gamma Nitsche O(H^2)/O(H)"),
         (os.path.join("src", "verification", "regen_section5.py"),        "GATE_COMPUTE : Table 1 + Table 4"),
+        (os.path.join("src", "solvers",      "resonant_mass_2d.py"),      "GATE_VNV[resonant] : negative-effective-mass band gap"),
     ]
     for script, label in gates:
         status, elapsed = run(script, label)
@@ -85,11 +86,14 @@ def main():
         (os.path.join("src", "figures", "make_meshfig.py"),     "Fig 2 — mesh hierarchy"),
         (os.path.join("src", "figures", "make_basisfig.py"),    "Fig 3 — spectral MsFEM basis functions"),
         (os.path.join("src", "figures", "make_cellfig.py"),     "Fig 4 — strip-cell corrector fields"),
-        (os.path.join("src", "figures", "make_figs_modelA.py"), "Fig 5 — transmission validation (gate/ref)"),
-        (os.path.join("src", "figures", "make_panel6.py"),      "Fig 6 — 6-panel solution"),
-        (os.path.join("src", "figures", "make_fig_energy.py"),  "Fig 8 — discrete energy conservation"),
-        (os.path.join("src", "solvers", "resonant_mass_2d.py"), "Fig 9 — resonant band gap"),
-        (os.path.join("src", "figures", "sensitivity_wave.py"), "Sensitivity + wave snapshot figures"),
+        (os.path.join("src", "figures", "make_figs_modelA.py"), "Fig 5 + Fig 8 — gate/ref validation + resonant band gap"),
+        (os.path.join("src", "figures", "make_panel6.py"),      "Fig 6a — 6-panel solution (Ventcel jump)"),
+        (os.path.join("src", "figures", "make_fig_scattering.py"), "Fig 6b — transient scattering DNS vs EI"),
+        (os.path.join("src", "figures", "make_fig_energy.py"),  "Fig 7 — discrete energy conservation"),
+        (os.path.join("src", "figures", "sensitivity_wave.py"), "Sensitivity mu* vs contrast + wave snapshot"),
+        (os.path.join("src", "figures", "make_anim_wave.py"),   "Anim — wave propagation (anim_wave.gif)"),
+        (os.path.join("src", "figures", "make_anim_bandgap.py"),   "Anim — resonant band gap (anim_bandgap.gif)"),
+        (os.path.join("src", "figures", "make_anim_scattering.py"),"Anim — transient scattering DNS vs EI (anim_scattering.gif)"),
     ]
     for script, label in figures:
         status, elapsed = run(script, label)
