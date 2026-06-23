@@ -1,0 +1,14 @@
+# MsFEM-Dynamic-Homogenization — pinned dependencies
+# Python 3.13 required
+# CRITICAL: scikit-fem version 12.0.1 — earlier versions have a DG assembly
+# bug (ElementTriDG + InteriorFacetBasis) that causes NaN in convergence tests.
+# See data/PROVENANCE.md (GATE_VNV[Nitsche] diagnosis, 2026-06-16).
+
+scikit-fem==12.0.1
+numpy>=1.26,<3
+scipy>=1.12,<2
+matplotlib>=3.8,<4
+cycler>=0.12
+
+# Optional — improves figure aesthetics if available; gracefully skipped otherwise
+# scienceplots>=2.1
