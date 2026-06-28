@@ -47,7 +47,7 @@ This repository implements the **Multiscale Finite Element Method (MsFEM)** for 
 
 ---
 
-## Physical model and theory 🧮
+## Physical model and theory 
 
 ### Governing equation
 
@@ -74,7 +74,7 @@ Dimensional parameters:
 
 ---
 
-## Homogenization and interface conditions 🔬
+## Homogenization and interface conditions 
 
 ### Asymptotic expansion
 
@@ -146,7 +146,7 @@ flowchart LR
 
 ---
 
-## Multiscale FEM discretisation 📐
+## Multiscale FEM discretisation 
 
 ### Spectral MsFEM basis
 
@@ -205,7 +205,7 @@ flowchart TD
 
 ---
 
-## Locally resonant inclusions and band gaps 🎵
+## Locally resonant inclusions and band gaps 
 
 ### Resonant surface mass
 
@@ -231,7 +231,7 @@ Computed for the locally resonant regime: **band gap over $[f_1, 1.26\,f_1]$**, 
 
 ---
 
-## Installation 🛠️
+## Installation 
 
 ### Requirements
 
@@ -266,7 +266,7 @@ Version **12.0.1 is required**. Earlier versions contain a bug in `ElementTriDG`
 
 ---
 
-## Quick start 🚀
+## Quick start 
 
 Run the full pipeline — all verification gates then all figures — with a single command:
 
@@ -323,7 +323,7 @@ flowchart TD
 
 ---
 
-## Repository structure 📁
+## Repository structure 
 
 ```
 msfem2d_verified/
@@ -395,7 +395,7 @@ msfem2d_verified/
 
 ---
 
-## Verification gates ✅
+## Verification gates 
 
 The pipeline uses five verification gates. All must `PASS` before any paper result is trusted.
 
@@ -415,7 +415,7 @@ python run_all.py --gates
 
 ---
 
-## Reproducing each paper result 📊
+## Reproducing each paper result 
 
 ### Table 2 — Effective interface parameters
 
@@ -509,7 +509,7 @@ python src/figures/make_anim_scattering.py  # → figures/anim_scattering.gif
 
 ---
 
-## Provenance and reproducibility 📋
+## Provenance and reproducibility 
 
 [`data/PROVENANCE.md`](data/PROVENANCE.md) is the authoritative record of every numerical claim in the paper:
 
